@@ -1,0 +1,19 @@
+Loaded raw dataset: 994 rows, 14 columns
+Restored correct brand-name capitalization for company column (e.g. Ibm -> IBM, Ionq -> IonQ)
+Standardized text formatting for columns: ['company', 'country', 'technology_type', 'sector_focus']
+Rows with unparseable dates dropped: 0
+Removed 11 exact duplicate rows
+Removed 0 duplicate rows on business key (record_id)
+Fixed 6 negative 'qubit_count' values by taking absolute value
+Flagged 0 impossible gate_error_rate_pct values (>100%) as missing for re-imputation
+Imputed 91 missing numeric values using per-technology median
+Imputed 14 missing sector_focus values with mode ('General Research')
+
+Final cleaned dataset shape: (983, 17)
+Remaining missing values total: 0
+Date range: 2017-01-31 to 2026-06-30
+Commercial availability rate: 0.406
+Unique companies: ['D-Wave', 'Google', 'IBM', 'Intel', 'IonQ', 'Origin Quantum', 'Pasqal', 'PsiQuantum', 'QuEra', 'Quantinuum', 'Rigetti', 'Xanadu']
+Unique technology types: ['Neutral Atom', 'Photonic', 'Quantum Annealing', 'Silicon Spin', 'Superconducting', 'Trapped Ion']
+
+Cleaned dataset saved to: /home/claude/Future-of-Data-Quantum-Analytics/dataset/cleaned_quantum_analytics_data.csv

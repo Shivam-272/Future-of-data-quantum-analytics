@@ -1,0 +1,39 @@
+======================================================================
+FUTURE OF DATA: QUANTUM ANALYTICS - MODEL PERFORMANCE REPORT
+======================================================================
+Dataset size: 983 rows
+Overall commercial availability rate: 0.406
+Features used (classification): ['company_enc', 'country_enc', 'technology_type_enc', 'sector_focus_enc', 'qubit_count', 'gate_error_rate_pct', 'coherence_time_us', 'quantum_volume', 'funding_raised_million_usd', 'publications_count', 'patents_filed', 'years_since_2017']
+
+----------------------------------------------------------------------
+MODEL 1: Random Forest Classifier - Commercial Availability Prediction
+----------------------------------------------------------------------
+
+Accuracy : 0.6599
+Precision: 0.5765
+Recall   : 0.6125
+F1-score : 0.5939
+ROC-AUC  : 0.7253
+
+Classification Report:
+                        precision    recall  f1-score   support
+
+    Not Yet Commercial       0.72      0.69      0.71       117
+Commercially Available       0.58      0.61      0.59        80
+
+              accuracy                           0.66       197
+             macro avg       0.65      0.65      0.65       197
+          weighted avg       0.66      0.66      0.66       197
+
+
+----------------------------------------------------------------------
+MODEL 2: Random Forest Regressor - Qubit Count Prediction
+----------------------------------------------------------------------
+
+Mean Absolute Error (MAE) : 304.8 qubits
+Root Mean Squared Error   : 1058.4 qubits
+R-squared (R2 Score)      : 0.9881
+
+======================================================================
+All model artifacts (plots) saved to visuals/ folder.
+======================================================================
